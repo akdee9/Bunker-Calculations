@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Quantity Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Ship Fuel Quantity Calculator</h2>
+        <form id="fuelForm">
+            <label>Tank Sounding (cm):</label>
+            <input type="number" id="sounding" required>
+
+            <label>Density (kg/m³):</label>
+            <input type="number" id="density" required>
+
+            <label>Temperature Correction Factor (TCF):</label>
+            <input type="number" id="tcf" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <h3>Result:</h3>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
